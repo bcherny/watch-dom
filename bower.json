@@ -1,6 +1,6 @@
 {
   "name": "watch-dom",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Angular $watch for the DOM",
   "main": "dist/watch-dom.js",
   "keywords": [
@@ -29,9 +29,9 @@
     "src"
   ],
   "dependencies": {
-    "angular": "~1.2.16"
+    "angular": "^1"
   },
   "devDependencies": {
-    "angular-mocks": "~1.2.16"
+    "angular-mocks": "^1"
   }
 }
