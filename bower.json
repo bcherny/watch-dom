@@ -1,0 +1,37 @@
+{
+  "name": "watch-dom",
+  "version": "0.0.1",
+  "description": "Angular $watch for the DOM",
+  "main": "dist/watch-dom.js",
+  "keywords": [
+    "watch",
+    "$watch",
+    "observe",
+    "dom",
+    "document",
+    "element",
+    "change",
+    "subtree",
+    "modify",
+    "modification",
+    "attribute",
+    "node",
+    "angular"
+  ],
+  "authors": [
+    "Boris Cherny <bcherny@turn.com>"
+  ],
+  "license": "Apache2",
+  "ignore": [
+    "node_modules",
+    "bower_components",
+    "test",
+    "src"
+  ],
+  "dependencies": {
+    "angular": "~1.2.16"
+  },
+  "devDependencies": {
+    "angular-mocks": "~1.2.16"
+  }
+}
