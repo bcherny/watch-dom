@@ -1,4 +1,4 @@
-watch-dom
+watch-dom [![Build Status](https://travis-ci.org/turn/watch-dom.svg?branch=master)](https://travis-ci.org/turn/watch-dom)
 =========
 
 ## what?
