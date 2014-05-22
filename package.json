@@ -4,7 +4,7 @@
   "description": "Angular $watch for the DOM",
   "main": "dist/watch-dom.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "grunt travis --verbose"
   },
   "repository": {
     "type": "git",

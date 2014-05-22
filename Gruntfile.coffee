@@ -53,3 +53,4 @@ module.exports = (grunt) ->
 
 	grunt.registerTask 'default', build
 	grunt.registerTask 'test', test
+	grunt.registerTask 'travis', ['jasmine']
