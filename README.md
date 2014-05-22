@@ -1,6 +1,10 @@
 watch-dom
 =========
 
+## what?
+
+efficiently watch for changes to a dom element (or its descendents).
+
 ## why?
 
 angular `$watch` observes property modifications on the `$scope`, since in angular the `$scope` is the source of truth. this is a good pattern for most use cases. however, there are situations where you want modules to be decoupled, and the dom is the fundamental source of truth.
@@ -58,6 +62,12 @@ angular
 	
 });
 ```
+
+## browser compatibility
+
+ie11+, firefox 28+, chrome 31+, safari 7+, opera 20+, ios 6+, android 4.4+
+
+[full list](http://caniuse.com/#feat=mutationobserver)
 
 ## alternative approaches
 
