@@ -72,7 +72,7 @@ describe('watch-dom', function() {
     return it('should return instance#disconnect', function() {
       var disconnect;
       disconnect = this.watchDom.$watch(this.$document, function() {});
-      return expect(disconnect).toBe(methods.disconnect);
+      return expect(angular.isFunction(disconnect)).toBe(true);
     });
   });
 });

@@ -17,7 +17,7 @@ angular.module('watchDom', []).constant('watchDomOptions', {
           cb(mutationRecord, mutationRecord.oldValue);
         });
       mutationObserver.observe(element, angular.extend({}, watchDomOptions, options));
-      return mutationObserver.disconnect;
+      return mutationObserver.disconnect.bind(mutationObserver);
     };
   }
 ]);

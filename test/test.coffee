@@ -77,9 +77,7 @@ describe 'watch-dom', ->
 			expect methods.observe.calls.argsFor 0
 			.toEqual [@$document, angular.extend watchDomOptions, options]
 
-		it 'should return instance#disconnect', ->
+		it 'should return a function', ->
 
-			disconnect = @watchDom.$watch @$document, ->
-
-			expect disconnect
-			.toBe methods.disconnect
+			expect angular.isFunction @watchDom.$watch @$document, ->
+			.toBe true

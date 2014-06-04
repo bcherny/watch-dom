@@ -26,7 +26,7 @@ angular
 			angular.extend({}, watchDomOptions, options)
 		);
 
-		return mutationObserver.disconnect;
+		return mutationObserver.disconnect.bind(mutationObserver);
 
 	};
 
