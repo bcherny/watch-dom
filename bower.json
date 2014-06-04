@@ -1,6 +1,6 @@
 {
   "name": "watch-dom",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Angular $watch for the DOM",
   "main": "dist/watch-dom.js",
   "keywords": [
