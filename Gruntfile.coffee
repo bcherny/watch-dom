@@ -23,6 +23,12 @@ module.exports = (grunt) ->
 			files:
 				'test/test.js': 'test/test.coffee'
 
+		coveralls:
+			options:
+				force: true
+			main:
+				src: 'reports/lcov/lcov.info'
+
 		jasmine:
 			coverage:
 				src: [
