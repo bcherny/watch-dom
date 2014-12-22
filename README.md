@@ -1,5 +1,4 @@
-watch-dom [![Build Status](https://travis-ci.org/turn/watch-dom.svg?branch=master)](https://travis-ci.org/turn/watch-dom)
-=========
+# watch-dom [![Build Status](https://travis-ci.org/bcherny/watch-dom.svg?branch=master)](https://travis-ci.org/bcherny/watch-dom) [![Coverage Status](https://img.shields.io/coveralls/bcherny/watch-dom.svg)](https://coveralls.io/r/bcherny/watch-dom)
 
 ## what?
 

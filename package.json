@@ -1,14 +1,15 @@
 {
   "name": "watch-dom",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Angular $watch for the DOM",
   "main": "dist/watch-dom.js",
   "scripts": {
-    "test": "grunt travis --verbose"
+    "test": "grunt test --verbose",
+    "beforetest": "npm i"
   },
   "repository": {
     "type": "git",
-    "url": "git@github.com:turn/watch-dom.git"
+    "url": "git@github.com:bcherny/watch-dom.git"
   },
   "keywords": [
     "watch",
@@ -25,17 +26,19 @@
     "node",
     "angular"
   ],
-  "author": "Boris Cherny <bcherny@turn.com>",
+  "author": "Boris Cherny <boris@performancejs.com>",
   "license": "Apache2",
   "bugs": {
-    "url": "https://github.com/turn/watch-dom/issues"
+    "url": "https://github.com/bcherny/watch-dom/issues"
   },
-  "homepage": "https://github.com/turn/watch-dom",
+  "homepage": "https://github.com/bcherny/watch-dom",
   "devDependencies": {
     "grunt": "^0.4.5",
     "grunt-contrib-coffee": "^0.10.1",
-    "grunt-contrib-jasmine": "^0.6.4",
+    "grunt-contrib-jasmine": "^0.8.1",
     "grunt-contrib-watch": "^0.6.1",
-    "grunt-ngmin": "0.0.3"
+    "grunt-coveralls": "^1.0.0",
+    "grunt-ngmin": "0.0.3",
+    "grunt-template-jasmine-istanbul": "^0.2.6"
   }
 }
