@@ -37,12 +37,19 @@ describe 'watch-dom', ->
 
 		it 'should throw a TypeError when passed a non-element as a 1st argument', ->
 
-			expect -> @watchDom.$watch 42
+			try
+				@watchDom.$watch 42
+			catch e
+				expect e instanceof TypeError
+				.toBe true
 
 		it 'should throw a TypeError when passed a non-function as a 2nd argument', ->
 
-			expect -> @watchDom.$watch @$document, 42
-			.toThrowError TypeError
+			try
+				@watchDom.$watch @$document, 42
+			catch e
+				expect e instanceof TypeError
+				.toBe true
 
 		it 'should instantiate a MutationObserver', ->
 
@@ -53,6 +60,9 @@ describe 'watch-dom', ->
 
 			do expect $window.MutationObserver
 			.toHaveBeenCalled
+
+			expect typeof $window.MutationObserver.calls.argsFor(0)[0]
+			.toBe 'function'
 
 		it 'should call instance#observe with the element and options', inject (watchDomOptions) ->
 
@@ -79,5 +89,5 @@ describe 'watch-dom', ->
 
 		it 'should return a function', ->
 
-			expect angular.isFunction @watchDom.$watch @$document, ->
+			expect (angular.isFunction @watchDom.$watch @$document, ->)
 			.toBe true
