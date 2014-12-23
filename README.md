@@ -1,4 +1,4 @@
-# watch-dom [![Build Status][build]](https://travis-ci.org/bcherny/watch-dom) [![Coverage Status][coverage]](https://coveralls.io/r/bcherny/watch-dom) ![bower] [![npm]](https://www.npmjs.com/package/watch-dom)
+# watch-dom [![Build Status][build]](https://travis-ci.org/bcherny/watch-dom) [![Coverage Status][coverage]](https://coveralls.io/r/bcherny/watch-dom) ![][bower] [![npm]](https://www.npmjs.com/package/watch-dom)
 
 [build]: https://img.shields.io/travis/bcherny/watch-dom.svg?branch=master&style=flat-square
 [coverage]: http://img.shields.io/coveralls/bcherny/watch-dom.svg?branch=master&style=flat-square
