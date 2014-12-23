@@ -11,8 +11,8 @@ module.exports = (grunt) ->
 
 	# task sets
 	build = ['ngmin']
-	test = ['coffee', 'jasmine:unit']
-	coverage = ['coffee', 'jasmine:coverage']
+	test = ['coffee:test', 'jasmine:unit']
+	coverage = ['coffee:test', 'jasmine:coverage']
 
 	# task defs
 	grunt.initConfig
@@ -20,8 +20,12 @@ module.exports = (grunt) ->
 		pkg: grunt.file.readJSON 'package.json'
 
 		coffee:
-			files:
-				'test/test.js': 'test/test.coffee'
+			test:
+				files:
+					'test/test.js': 'test/test.coffee'
+				options:
+					bare: true
+					sourceMap: true
 
 		coveralls:
 			options:
@@ -79,8 +83,8 @@ module.exports = (grunt) ->
 					interrupt: true
 					spawn: false
 			test:
-				files: './test/*.js'
-				tasks: test
+				files: './test/*.coffee'
+				tasks: coverage
 				options:
 					interrupt: true
 					spawn: false
